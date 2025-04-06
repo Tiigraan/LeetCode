@@ -6,7 +6,7 @@ public class T368_LargestDivisibleSubset
     {
         Array.Sort(nums);
         var maxCounts = new int[nums.Length];
-        var path = Enumerable.Range(0, nums.Length).ToArray();
+        var path = new int[nums.Length];
         var maxSubsetCount = 0;
         var startMaxSubsetCount = 0;
         
